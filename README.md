@@ -52,10 +52,7 @@ class ExceptionHandler {
   ...
 
   async report (error, { request }) {
-    sentry.notify(error, {
-      data: request.all(),
-      headers: request.headers()
-    })
+    sentry.captureException(error)
   }
 }
 
