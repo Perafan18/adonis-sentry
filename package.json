@@ -1,6 +1,6 @@
 {
   "name": "adonis-raven",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sentry provider for adonis framework",
   "main": "index.js",
   "scripts": {
