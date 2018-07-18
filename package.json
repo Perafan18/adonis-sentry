@@ -4,7 +4,13 @@
   "description": "Sentry provider for adonis framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "posttest": "npm run coverage",
+    "test:local": "FORCE_COLOR=true node bin/index.js --local",
+    "test": "nyc npm run test:local",
+    "test:win": "set FORCE_COLOR=true && node bin/index.js --win",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -29,6 +35,7 @@
   "devDependencies": {
     "dotenv": "^6.0.0",
     "japa": "^1.0.6",
+    "japa-cli": "^1.0.1",
     "nyc": "^12.0.2",
     "semver": "^5.5.0",
     "standard": "^11.0.1"
