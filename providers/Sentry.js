@@ -7,7 +7,7 @@ class SentryProvider extends ServiceProvider {
   register () {
     const Config = this.app.use('Adonis/Src/Config')
     this.app.singleton('Sentry', () => {
-      const sentryDns = Config.get('raven.dns')
+      const sentryDns = Config.get('sentry.dns')
       raven.config(sentryDns).install()
       return raven
     })

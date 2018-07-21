@@ -2,7 +2,7 @@
 
 Sentry provider for AdonisJS
 
-[![npm version](https://badge.fury.io/js/adonis-raven.svg)](https://badge.fury.io/js/adonis-raven)
+[![npm version](https://badge.fury.io/js/adonis-sentry.svg)](https://badge.fury.io/js/adonis-sentry)
 [![Build status](https://ci.appveyor.com/api/projects/status/sq2dbol6yxbjvkmn/branch/master?svg=true)](https://ci.appveyor.com/project/Perafan18/adonis-sentry/branch/master)
 [![GitHub license](https://img.shields.io/github/license/Perafan18/adonis-sentry.svg)](https://github.com/Perafan18/adonis-sentry/blob/master/LICENSE)
 
@@ -10,7 +10,7 @@ Sentry provider for AdonisJS
 ## Install
 
 ```bash
-adonis install adonis-raven
+adonis install adonis-sentry
 ```
 
 You need to add the provider to AdonisJS at `start/app.js`:
@@ -18,7 +18,7 @@ You need to add the provider to AdonisJS at `start/app.js`:
 ```javascript
 const providers = [
    ...
-   'adonis-raven/providers/Sentry',
+   'adonis-sentry/providers/Sentry',
 ];
 ```
 
@@ -76,3 +76,7 @@ It is always helpful if we try to follow certain practices when creating issues 
 ## License
 
 Adonis Sentry is open-sourced software licensed under the MIT license.
+
+## Gratefulness
+
+I want to thank [Zura](https://github.com/zgabievi) for have created the [previous provider](https://github.com/zgabievi/adonis-sentry).
