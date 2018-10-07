@@ -1,15 +1,15 @@
 'use strict'
 
 const { ServiceProvider } = require('@adonisjs/fold')
-const raven = require('raven')
+const Sentry = require('@sentry/node')
 
 class SentryProvider extends ServiceProvider {
   register () {
     const Config = this.app.use('Adonis/Src/Config')
     this.app.singleton('Sentry', () => {
       const sentryDns = Config.get('sentry.dns')
-      raven.config(sentryDns).install()
-      return raven
+      Sentry.init({ dsn: sentryDns })
+      return Sentry
     })
   }
 }

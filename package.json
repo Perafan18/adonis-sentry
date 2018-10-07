@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Perafan18/adonis-sentry#readme",
   "dependencies": {
-    "raven": "^2.6.3"
+    "@sentry/node": "^4.0.6"
   },
   "devDependencies": {
     "dotenv": "^6.0.0",
@@ -39,5 +39,10 @@
     "nyc": "^12.0.2",
     "semver": "^5.5.0",
     "standard": "^11.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "stubs/sentry.js"
+    ]
   }
 }

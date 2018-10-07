@@ -2,12 +2,12 @@
 
 require('dotenv').load()
 const test = require('japa')
-const Raven = require('raven')
+const Sentry = require('@sentry/node')
 
-test.group('Raven', () => {
+test.group('Sentry', () => {
   test('configure and throw exception', async (assert) => {
     const sentryDns = process.env.SENTRY_DNS
-    Raven.config(sentryDns).install()
+    Sentry.init({ dsn: sentryDns })
     let name = 'adonis'
     try {
       name = 'Pedro Perafán'
@@ -18,7 +18,7 @@ test.group('Raven', () => {
 
       console.log(`My name is ${name}`)
     } catch (error) {
-      Raven.captureException(error)
+      Sentry.captureException(error)
       name = 'Adonis Framework'
       console.log('An exeption was thrown, go to sentry.io')
     }
