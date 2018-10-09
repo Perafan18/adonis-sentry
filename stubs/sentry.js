@@ -10,5 +10,6 @@ module.exports = {
    |--------------------------------------------------------------------------
    */
   dns: Env.get('SENTRY_DNS')
+  enviroment: Env.get('SENTRY_ENVIROMENT')
 
 }

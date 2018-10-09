@@ -26,6 +26,7 @@ and in your `.env` file
 
 ```bash
 SENTRY_DNS=
+SENTRY_ENVIROMENT=
 ```
 
 then you can use it as
