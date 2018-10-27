@@ -8,7 +8,11 @@ class SentryProvider extends ServiceProvider {
     const Config = this.app.use('Adonis/Src/Config')
     this.app.singleton('Sentry', () => {
       const sentryDns = Config.get('sentry.dns')
-      Sentry.init({ dsn: sentryDns })
+      const environment = Config.get('sentry.environment')
+      Sentry.init({ 
+        dsn: sentryDns,
+        environment
+       })
       return Sentry
     })
   }
