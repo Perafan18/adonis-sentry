@@ -25,7 +25,7 @@ const providers = [
 and in your `.env` file
 
 ```bash
-SENTRY_DNS=
+SENTRY_DSN=
 SENTRY_ENVIROMENT=
 ```
 

@@ -6,8 +6,8 @@ const Sentry = require('@sentry/node')
 
 test.group('Sentry', () => {
   test('configure and throw exception', async (assert) => {
-    const sentryDns = process.env.SENTRY_DNS
-    Sentry.init({ dsn: sentryDns })
+    const sentryDsn = process.env.SENTRY_DSN
+    Sentry.init({ dsn: sentryDsn })
     let name = 'adonis'
     try {
       name = 'Pedro Perafán'

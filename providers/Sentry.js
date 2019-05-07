@@ -7,10 +7,10 @@ class SentryProvider extends ServiceProvider {
   register () {
     const Config = this.app.use('Adonis/Src/Config')
     this.app.singleton('Sentry', () => {
-      const sentryDns = Config.get('sentry.dns')
+      const sentryDsn = Config.get('sentry.dsn')
       const environment = Config.get('sentry.environment')
-      Sentry.init({ 
-        dsn: sentryDns,
+      Sentry.init({
+        dsn: sentryDsn,
         environment
        })
       return Sentry

@@ -9,7 +9,7 @@ module.exports = {
    | API key
    |--------------------------------------------------------------------------
    */
-  dns: Env.get('SENTRY_DNS'),
+  dsn: Env.get('SENTRY_DSN'),
   environment: Env.get('SENTRY_ENVIRONMENT')
 
 }
