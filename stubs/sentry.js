@@ -11,5 +11,8 @@ module.exports = {
    */
   dsn: Env.get('SENTRY_DSN'),
 
-  environment: Env.get('SENTRY_ENVIRONMENT')
+  environment: Env.get('SENTRY_ENVIRONMENT'),
+  options: {
+    // captureUnhandledRejections: true
+  }
 }

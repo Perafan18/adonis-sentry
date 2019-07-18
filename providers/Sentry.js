@@ -9,9 +9,11 @@ class SentryProvider extends ServiceProvider {
     this.app.singleton('Sentry', () => {
       const sentryDsn = Config.get('sentry.dsn')
       const environment = Config.get('sentry.environment')
+      const options = Config.get('sentry.options', {})
       Sentry.init({
         dsn: sentryDsn,
-        environment
+        environment,
+        ...options
        })
       return Sentry
     })
