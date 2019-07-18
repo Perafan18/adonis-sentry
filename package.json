@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Perafan18/adonis-sentry#readme",
   "dependencies": {
-    "@sentry/node": "^4.0.6"
+    "@sentry/node": "^5.5.0"
   },
   "devDependencies": {
     "dotenv": "^6.0.0",
