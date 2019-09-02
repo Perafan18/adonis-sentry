@@ -1,6 +1,6 @@
 {
   "name": "adonis-sentry",
-  "version": "1.0.4",
+  "version": "2.0.1",
   "description": "Sentry provider for adonis framework",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Perafan18/adonis-sentry#readme",
   "dependencies": {
-    "@sentry/node": "^4.0.6"
+    "@sentry/node": "^5.5.0"
   },
   "devDependencies": {
     "dotenv": "^6.0.0",
