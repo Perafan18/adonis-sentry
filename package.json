@@ -1,6 +1,6 @@
 {
   "name": "adonis-sentry",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Sentry provider for adonis framework",
   "main": "index.js",
   "scripts": {
@@ -36,11 +36,11 @@
     "dotenv": "^6.0.0",
     "japa": "^1.0.6",
     "japa-cli": "^1.0.1",
-    "nyc": "^12.0.2",
-    "semver": "^5.5.0",
-    "standard": "^11.0.1",
+    "js-yaml": ">=3.13.1",
     "lodash": ">=4.17.13",
-    "js-yaml": ">=3.13.1"
+    "nyc": "^14.1.1",
+    "semver": "^5.5.0",
+    "standard": "^11.0.1"
   },
   "standard": {
     "ignore": [
