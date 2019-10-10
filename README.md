@@ -26,7 +26,7 @@ and in your `.env` file
 
 ```bash
 SENTRY_DSN=
-SENTRY_ENVIROMENT=
+SENTRY_ENVIRONMENT=
 ```
 
 then you can use it as
