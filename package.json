@@ -6,11 +6,8 @@
   "scripts": {
     "lint": "standard",
     "pretest": "npm run lint",
-    "posttest": "npm run coverage",
-    "test:local": "FORCE_COLOR=true node bin/index.js --local",
-    "test": "nyc npm run test:local",
-    "test:win": "set FORCE_COLOR=true && node bin/index.js --win",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test:local": "node japaFile.js",
+    "test": "nyc npm run test:local"
   },
   "repository": {
     "type": "git",
@@ -33,8 +30,11 @@
     "@sentry/node": "^5.5.0"
   },
   "devDependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/sink": "^1.0.17",
     "dotenv": "^6.0.0",
-    "japa": "^1.0.6",
+    "japa": "^2.0.10",
     "japa-cli": "^1.0.1",
     "js-yaml": ">=3.13.1",
     "lodash": ">=4.17.13",

@@ -21,7 +21,7 @@ test.group('Sentry Provider', (group) => {
 
   test('register sentry provider', async (assert) => {
     await registrar
-      .providers([path.join(__dirname, '../../providers/SentryProvider')])
+      .providers([path.join(__dirname, '../../providers/Sentry')])
       .registerAndBoot()
 
     assert.isDefined(ioc.use('Adonis/Src/Sentry'))

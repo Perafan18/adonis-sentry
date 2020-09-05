@@ -22,7 +22,7 @@ test.group('Test Command', (group) => {
     })
 
     await registrar
-      .providers([path.join(__dirname, '../../providers/SentryProvider')])
+      .providers([path.join(__dirname, '../../providers/Sentry')])
       .registerAndBoot()
   })
 

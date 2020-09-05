@@ -18,7 +18,7 @@ You need to add the provider to AdonisJS at `start/app.js`:
 ```javascript
 const providers = [
    ...
-   'adonis-sentry/providers/SentryProvider',
+   'adonis-sentry/providers/Sentry',
 ];
 ```
 
