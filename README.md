@@ -18,7 +18,7 @@ You need to add the provider to AdonisJS at `start/app.js`:
 ```javascript
 const providers = [
    ...
-   'adonis-sentry/providers/Sentry',
+   'adonis-sentry/providers/SentryProvider',
 ];
 ```
 
@@ -48,7 +48,7 @@ and we need add sentry notify in `app/Exceptions/Handler.js`
 
 const sentry = use('Sentry')
 
-class ExceptionHandler {
+class ExceptionHandler extends BaseExceptionHandler {
 
   ...
 
@@ -58,7 +58,14 @@ class ExceptionHandler {
 }
 
 module.exports = ExceptionHandler
+```
 
+## Testing configuration
+
+You can test your configuration using the command:
+
+```
+adonis sentry:test
 ```
 
 ## Official documentation for Node.js apps
