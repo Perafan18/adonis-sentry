@@ -1,6 +1,6 @@
 {
   "name": "adonis-sentry",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Sentry provider for adonis framework",
   "main": "index.js",
   "scripts": {
