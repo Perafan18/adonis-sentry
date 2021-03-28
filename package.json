@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Perafan18/adonis-sentry#readme",
   "dependencies": {
-    "@sentry/node": "^5.5.0"
+    "@sentry/node": "^6.2.1"
   },
   "devDependencies": {
     "@adonisjs/ace": "^5.0.8",
